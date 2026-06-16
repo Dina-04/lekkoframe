@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Разработка и создание сайтов — LekkoFrame</title>
+    <meta name="description" content="Создаю сайты под ключ от идеи до запуска. Индивидуальный дизайн, адаптация под все устройства. Закажите сайт, который приносит клиентов.">
+    
+<!-- ФАВ ИКОНКА -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="icons/fav-icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icons/fav-icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icons/fav-icons/android-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icons/fav-icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icons/fav-icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icons/fav-icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icons/fav-icons/android-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icons/fav-icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/fav-icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="icons/fav-icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/fav-icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icons/fav-icons/android-icon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/fav-icons/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+
+
+</head>
+
+<body>
+    <section class="main-section">
+        <div class="main-section__left container">
+        <div class="main-section__menu">
+            <nav class="main-section__nav nav-menu">
+                <ul class="nav-menu__list">
+                    <li class="nav-menu__list-item"> <a href="#development">Разработка</a></li>  <!-- ниже в секции 2 создан селектор id about me -->
+                    <li class="nav-menu__list-item"> <a href="#portfolio">Примеры работ</a></li>
+                    <li class="nav-menu__list-item"> <a href="#prices">Цены</a></li>
+                    <li class="nav-menu__list-item"> <a href="#about-me">Обо мне</a></li>
+                    <li class="nav-menu__list-item"> <a href="#contacts">Контакты</a></li>
+                </ul>
+                </nav>
+                </div>
+            <div class="main-section__logo container">
+                <img src="icons/logo.svg" alt="logo">  
+        </div>
+        </div>
+
+        <h1 class="main-section__title">Разработка и создание сайтов</h1>
+        <h2 class="main-section__title_1">Создаю сайты, которые превращают клики в продажи</h2>
+        <h3 class="main-section__title_2">Я не просто рисую красивые картинки и пишу код. Я погружаюсь в ваш бизнес, <br> изучаю конкурентов и строю эффективный инструмент для привлечения <br> клиентов. </h3>
+
+        <!-- Кнопка -->
+<div class="main-section__button buttons">
+    <button class="buttons__btn open-modal-btn">ЗАКАЗАТЬ УСЛУГУ</button>
+</div>
+
+
+
+
+<!-- Модальное окно -->
+<div class="modal" id="modal">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__content">
+        <button class="modal__close" id="closemodalBtn">&times;</button>
+        
+        <h2 class="modal__title">Заказать сайт</h2>
+        
+        <form class="modal__form" id="bookingForm">
+            <div class="modal__field">
+                <label for="name">Имя и фамилия</label>
+                <input type="text" id="name" name="name" placeholder="Иван" required>
+            </div>
+            
+            <div class="modal__field">
+                <label for="email">Ваш почтовый адрес</label>
+                <input type="email" id="email" name="email" placeholder="ivanov@mail.com" required>
+            </div>
+            
+            <div class="modal__field">
+                <label for="phone">Ваш телефон</label>
+                <input type="tel" id="phone" name="phone" placeholder="+375 (29) 000-00-00" required>
+            </div>
+            
+            <div class="modal__field">
+                <label for="message">Ваше сообщение</label>
+                <textarea id="message" name="message" placeholder="Введите ваше сообщение..." rows="4"></textarea>
+            </div>
+            
+            <div class="modal__checkbox">
+                <input type="checkbox" id="agree-1" name="agree-1" required>
+                <label for="agree-1">Используя эту форму, вы соглашаетесь с <a href="#" id="privacyLink" class="privacy-link">политикой обработки персональных данных</a>
+</label>
+            </div>
+            
+
+
+
+            <!-- Модальное окно политики -->
+
+    <div class="modal" id="privacyModal">
+    <div class="modal__overlay" id="privacyOverlay"></div>
+    <div class="modal__content modal__content--privacy">
+        <button class="modal__close" id="closePrivacyBtn">&times;</button>
+        <h2 class="modal__title">Политика обработки персональных данных</h2>
+        <div class="modal__text">
+            <p class="polit__title">1. Общие положения</p>
+            <p class="polit__text">1.1. Настоящая Политика определяет порядок обработки персональных данных пользователей (далее — Пользователи) сайта lekkoframe.by (далее — Сайт). <br>
+            1.2. Оператором персональных данных является Тарасенко Диана Александровна, действующая как самозанятое физическое лицо (далее — Оператор), зарегистрированный в Едином государственном регистре юридических лиц и индивидуальных предпринимателей за номером [УНП]. <br>
+            1.3. Настоящая Политика разработана в соответствии с Законом Республики Беларусь от 07.05.2021 № 99-З «О защите персональных данных». <br>
+            1.4. Используя Сайт и отправляя данные через форму обратной связи, Пользователь выражает согласие на обработку своих персональных данных в соответствии с настоящей Политикой.</p>
+            <p class="polit__title">2. Состав обрабатываемых персональных данных</p>
+            <p class="polit__text">2.1. Оператор обрабатывает следующие персональные данные, предоставляемые Пользователем добровольно при заполнении формы обратной связи: <br>
+    1.имя и фамилия; <br>
+    2.адрес электронной почты; <br>
+    3.номер телефона;<br>
+    4.текст сообщения (в том числе иные сведения, указанные Пользователем добровольно). <br>
+    2.2. Также автоматически могут собираться технические данные: IP-адрес, сведения о браузере, дата и время посещения, cookie-файлы.</p>
+        <p class="polit__title">3. Цели обработки персональных данных</p>
+        <p class="polit__text">3.1. Персональные данные обрабатываются в следующих целях: <br>
+    1.связь с Пользователем по вопросам, указанным в сообщении;<br>
+    2.предоставление консультаций и информации об услугах;<br>
+    3.заключение и исполнение договоров на разработку сайтов и сопутствующие услуги;<br>
+    4.исполнение требований законодательства РБ.</p>
+        <p class="polit__title">4. Правовые основания обработки</p>
+        <p class="polit__text">4.1. Обработка осуществляется на основании: <br>
+    1.согласия Пользователя, выраженного путём проставления отметки в соответствующем поле формы и нажатия кнопки «Отправить»;<br>
+    2.необходимости исполнения договора, стороной которого является Пользователь, либо для принятия мер по заключению договора по инициативе Пользователя (ст. 9 Закона РБ «О защите персональных данных»).</p>
+        <p class="polit__title">5. Порядок и сроки обработки</p>
+        <p class="polit__text">5.1. Обработка персональных данных осуществляется с использованием средств автоматизации и/или без их использования. <br>
+    5.2. Персональные данные хранятся на территории Республики Беларусь. При использовании сторонних сервисов (хостинг, email, CRM) Оператор принимает меры для обеспечения соответствия их политик требованиям законодательства РБ. <br>
+    5.3. Срок хранения: до достижения целей обработки, но не дольше 3-х месяцев с момента последнего взаимодействия.</p>
+        <p class="polit__title">6. Передача персональных данных третьим лицам</p>
+        <p class="polit__text">6.1. Персональные данные не передаются третьим лицам, за исключением случаев: <br>
+    1.когда это необходимо для исполнения договора (например, привлечение субподрядчиков); <br>
+    2.по требованию уполномоченных государственных органов в случаях, предусмотренных законодательством РБ.</p>
+        <p class="polit__title">7. Права Пользователя</p>
+        <p class="polit__text">7.1. Пользователь имеет право: <br>
+    1.получать информацию об обработке своих персональных данных; <br>
+    2.требовать уточнения, блокирования или уничтожения своих персональных данных, если они являются неполными, устаревшими, недостоверными; <br>
+    3.отозвать согласие на обработку персональных данных, направив соответствующий запрос на email: lekkoframe@gmail.com.</p>
+        <p class="polit__title">8. Меры по защите персональных данных</p>
+        <p class="polit__text">8.1. Оператор принимает необходимые организационные и технические меры для защиты персональных данных от несанкционированного доступа, уничтожения, изменения, блокирования, копирования, распространения.</p>
+        <p class="polit__title">9. Контактная информация Оператора</p>
+        <p class="polit__text">9.1. По вопросам, связанным с обработкой персональных данных, можно обращаться: <br>
+    1.по email: lekkoframe@gmail.com
+    2.по телефону:</p>
+    <p class="polit__title">10. Заключительные положения</p>
+    <p class="polit__text">10.1. Настоящая Политика может быть изменена Оператором в одностороннем порядке. Новая редакция вступает в силу с момента размещения на Сайте. <br>
+        10.2. Действующая редакция Политики всегда доступна по адресу.
+    </p>
+
+
+        
+</div>
+    </div>
+</div>
+
+
+
+
+
+            <button type="submit" class="modal__submit">ОТПРАВИТЬ</button>
+            </form>
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+    </section>
+    
+    <section id="development" class="second-section">
+        <h2 class="second-section__title container">Разработка сайтов</h2>
+        <div class="second-section__text-container container">
+        <p>Создаю сайты, которые работают на результат. От простых лендингов до полноценных многостраничников — пишу чистый код на HTML, CSS и JavaScript или собираю проекты на Tilda, когда нужно быстро и красиво.
+            <br><br>
+    Что делаю: <br>
+        &middot; Лендинги и промо-страницы <br>
+        &middot; Корпоративные многостраничные сайты <br>
+        &middot; Интернет-магазины <br>
+        &middot; Платформы для онлайн-школ <br>
+        </p>
+            </div>
+    </section>
+
+     <section class="third-section container">
+    <h2 class="third-section__title scroll-animate scroll-animate__title">Этапы разработки</h2>
+    <h3 class="third-section__text scroll-animate">Формирование технического задания , согласование стоимости</h3>
+    <div class="arrow-down scroll-animate scroll-animate__arrow"></div>
+    <h3 class="third-section__text third-section__text-1 scroll-animate">Анализ ниши и конкурентов</h3>
+    <div class="arrow-down scroll-animate scroll-animate__arrow"></div>
+    <h3 class="third-section__text third-section__text-1 scroll-animate">Разработка и согласование дизайна, текста и изображений</h3>
+    <div class="arrow-down scroll-animate scroll-animate__arrow"></div>
+    <h3 class="third-section__text third-section__text-1 scroll-animate">Верстка сайта на Tilda, Webflow или классическая (HTML/CSS/JS)</h3>
+    <div class="arrow-down scroll-animate scroll-animate__arrow"></div>
+    <h3 class="third-section__text third-section__text-1 scroll-animate">Техническая оптимизация
+    </h3>
+    <div class="arrow-down scroll-animate scroll-animate__arrow"></div>
+    <h3 class="third-section__text third-section__text-1 scroll-animate">Тестирование сайта</h3>
+    <div class="arrow-down scroll-animate scroll-animate__arrow"></div>
+    <h3 class="third-section__text third-section__text-1 scroll-animate">Запуск сайта, передача заказчику данных для входа</h3>
+
+    </section>
+
+<section id="portfolio" class="fourth-section">
+  <h2 class="fourth-section__title container">Примеры моих работ</h2>
+
+  <div class="carousel">
+    <div class="carousel__track">
+      
+      <!-- Слайд 1 -->
+      <div class="carousel__slide active">
+        <div class="carousel__content">
+          <h3>Йога-ретрит на Шри-ланку</h3>
+          <p>Лендинг для йога-ретрита, спокойный дизайн, мягкие цвета, акцент на атмосферу отдыха и природы.</p>
+          <div class="fourth-section__button buttons">
+    <a href="https://www.behance.net/dianatarasenko" target="_blank" class="buttons__btn buttons__btn--small">
+        ПОРТФОЛИО
+    </a>
+</div>
+        </div>
+        <div class="carousel__image">
+          <img src="img/yoga.jpg" alt="Yoga Retreat">
+        </div>
+      </div>
+      
+      <!-- Слайд 2 -->
+      <div class="carousel__slide">
+        <div class="carousel__content">
+          <h3>Кофейня</h3>
+          <p>Многостраничный сайт для кофейни, с уютным дизайном и акцентом на атмосферу утреннего комфорта. Создан на HTML/CSS/JS.</p>
+          <div class="fourth-section__button buttons">
+    <a href="https://www.behance.net/dianatarasenko" target="_blank" class="buttons__btn buttons__btn--small">
+        ПОРТФОЛИО
+    </a>
+</div>
+        </div>
+        <div class="carousel__image">
+          <img src="img/dolce.jpg" alt="Coffee Shop">
+        </div>
+      </div>
+      
+
+      <!-- Слайд 3 -->
+      <div class="carousel__slide">
+        <div class="carousel__content">
+          <h3>Салон красоты</h3>
+          <p>Многостраничный сайт для салона красоты. Спокойная цветовая палитра и аккуратные блоки помогают клиенту быстро найти нужную услугу. Создан на Tilda.</p>
+          <div class="fourth-section__button buttons">
+    <a href="https://www.behance.net/dianatarasenko" target="_blank" class="buttons__btn buttons__btn--small">
+        ПОРТФОЛИО
+    </a>
+</div>
+        </div>
+        <div class="carousel__image">
+          <img src="img/image 14.jpg" alt="Coffee Shop">
+        </div>
+      </div>
+
+
+    </div>
+    
+    <!-- Стрелки -->
+    <button class="carousel__arrow carousel__arrow--prev">←</button>
+    <button class="carousel__arrow carousel__arrow--next">→</button>
+    
+    <!-- Точки -->
+    <div class="carousel__dots">
+      <button class="dot active" data-slide="0"></button>
+      <button class="dot" data-slide="1"></button>
+      <button class="dot" data-slide="2"></button>
+    </div>
+  </div>
+
+    </section>
+
+<!-- СЕКЦИЯ С ПОВОРОТНЫМИ КАРТОЧКАМИ -->
+ 
+
+    <section id="prices" class="fifth-section container">
+
+        <h2 class="fifth-section__title">Цены</h2>
+
+        
+        <div class="fifth-section__cards-wrapper">
+            <!-- ПЕРВАЯ КАРТОЧКА -->
+        <div class="fifth-section__card-container">
+            <div class="fifth-section__card-inner">
+                <div class="fifth-section__card-1 fifth-section__card-front">
+                <h3 class="fifth-section__card-title">Landing page/Сайт-визитка</h3>
+        <p class="fifth-section__card-text">Индивидуальный дизайн, адаптированный под цели бизнеса </p>
+        <p class="fifth-section__card-text">Написание продающего текста</p> 
+        <p class="fifth-section__card-text">Мобильная и декстопная версии сайта</p>  
+        <p class="fifth-section__card-text">Удобная форма обратной связи</p> 
+        <p class="fifth-section__card-text">Добавление анимаций на сайт</p>  
+        <p class="fifth-section__card-text">Базовая SEO-оптимизация </p>
+        <p class="fifth-section__card-text">Тестирование сайта</p>  
+        <p class="fifth-section__card-text">Помощь с покупкой и подключением домена</p>
+        <!--  Адаптивная верстка -->
+         <div class="adapt-5-1">
+            <p class="adapt-5-1__text">от 1200 BYN</p>
+         </div>
+    </div>
+
+
+       
+        <!-- Проба -->
+         <div class="fifth-section__card-1 fifth-section__card-back">
+            <h3 class="fifth-section__card-title_1">Landing-page</h3>
+            <p class="fifth-section__card-text_1">от 1200 BYN</p>
+            <!-- Кнопка -->
+<div class="fifth-section__button buttons">
+    <button class="buttons__btn fifth-section__buttons-btn-6 open-modal-btn" id="card-1">ЗАКАЗАТЬ УСЛУГУ</button>
+</div>
+        </div>
+        <!-- Проба -->
+            </div>
+    </div>
+
+
+    <!-- ВТОРАЯ КАРТОЧКА -->
+<div class="fifth-section__card-container">
+            <div class="fifth-section__card-inner">
+                <div class="fifth-section__card-1 fifth-section__card-front">
+                <h3 class="fifth-section__card-title-6">Многостраничный 
+сайт</h3>
+        <p class="fifth-section__card-text">Индивидуальный дизайн, адаптированный под цели бизнеса </p>
+        <p class="fifth-section__card-text">Написание продающего текста</p> 
+        <p class="fifth-section__card-text">Разработка структуры навигации</p>  
+        <p class="fifth-section__card-text">Блог или раздел новостей</p> 
+        <p class="fifth-section__card-text">Адаптация под все устройства
+
+        </p>  
+        <p class="fifth-section__card-text">Удобная форма обратной связи </p>
+        <p class="fifth-section__card-text">Добавление анимаций на сайт</p>  
+        <p class="fifth-section__card-text">Мультиязычность</p>
+        <p class="fifth-section__card-text">Базовая SEO-оптимизация</p>
+        <p class="fifth-section__card-text">Тестирование сайта</p>
+        <p class="fifth-section__card-text">Помощь с покупкой и подключением домена</p>
+       
+    <!--  Адаптивная верстка -->
+         <div class="adapt-5-1">
+            <p class="adapt-5-1__text">от 1800 BYN</p>
+         </div>
+    </div>
+
+        <!-- Проба -->
+         <div class="fifth-section__card-1 fifth-section__card-back">
+            <h3 class="fifth-section__card-title-7">Многостраничный 
+сайт</h3>
+            <p class="fifth-section__card-text_1">от 1800 BYN</p>
+            <!-- Кнопка -->
+<div class="fifth-section__button buttons">
+    <button class="buttons__btn fifth-section__buttons-btn-6 open-modal-btn" id="card-2">ЗАКАЗАТЬ УСЛУГУ</button>
+</div>
+        </div>
+        <!-- Проба -->
+            </div>
+    </div>
+
+
+
+
+<!-- ТРЕТЬЯ КАРТОЧКА -->
+    <div class="fifth-section__card-container">
+            <div class="fifth-section__card-inner">
+                <div class="fifth-section__card-1 fifth-section__card-front">
+                <h3 class="fifth-section__card-title-5">Интернет-магазин</h3>
+        <p class="fifth-section__card-text">Индивидуальный дизайн, адаптированный под цели бизнеса </p>
+        <p class="fifth-section__card-text">Написание продающего текста</p> 
+        <p class="fifth-section__card-text">Разработка структуры навигации</p>  
+        <p class="fifth-section__card-text">Блог или раздел новостей</p> 
+        <p class="fifth-section__card-text">Адаптация под все устройства</p>  
+        <p class="fifth-section__card-text">Удобная форма обратной связи</p>
+        <p class="fifth-section__card-text">Добавление анимации на сайт</p>  
+        <p class="fifth-section__card-text">Подключение каталога, корзины, личного кабинета</p>
+        <p class="fifth-section__card-text">Базовая SEO-оптимизация</p>
+        <p class="fifth-section__card-text">Тестирование сайта</p>
+        <p class="fifth-section__card-text">Подключение платежных систем</p>
+        <p class="fifth-section__card-text">Помощь с покупкой и подключением домена</p>
+        
+    <!--  Адаптивная верстка -->
+         <div class="adapt-5-1">
+            <p class="adapt-5-1__text">от 2000 BYN</p>
+         </div>
+
+    </div>
+
+        <!-- Проба -->
+         <div class="fifth-section__card-1 fifth-section__card-back">
+            <h3 class="fifth-section__card-title-8">Интернет-магазин</h3>
+            <p class="fifth-section__card-text_1">от 2000 BYN</p>
+            <!-- Кнопка -->
+<div class="fifth-section__button buttons">
+    <button class="buttons__btn fifth-section__buttons-btn-6 open-modal-btn" id="card-3">ЗАКАЗАТЬ УСЛУГУ</button>
+</div>
+        </div>
+        <!-- Проба -->
+            </div>
+    </div>
+
+
+    
+
+
+        </div>  
+
+
+
+
+
+
+
+        <div class="fifth-section__cards-wrapper">
+            <!-- ЧЕТВЕРТАЯ КАРТОЧКА -->
+        <div class="fifth-section__card-container">
+            <div class="fifth-section__card-inner">
+                <div class="fifth-section__card-1 fifth-section__card-front">
+                <h3 class="fifth-section__card-title-9">Сайт для <br> онлайн-школы</h3>
+        <p class="fifth-section__card-text">Индивидуальный дизайн, адаптированный под цели бизнеса </p>
+        <p class="fifth-section__card-text">Написание продающего текста</p> 
+        <p class="fifth-section__card-text">Разработка структуры навигации</p>  
+        <p class="fifth-section__card-text">Блог или раздел новостей</p> 
+        <p class="fifth-section__card-text">Адаптация под все устройства</p>  
+        <p class="fifth-section__card-text">Удобная форма обратной связи </p>
+        <p class="fifth-section__card-text">Добавление анимации на сайт</p>  
+        <p class="fifth-section__card-text">Подключение корзины, личного кабинета</p>
+        <p class="fifth-section__card-text">Тестирование сайта</p>
+        <p class="fifth-section__card-text">Подключение платежных систем</p>
+        <p class="fifth-section__card-text">Помощь с покупкой и подключением домена</p>
+        
+    <!--  Адаптивная верстка -->
+         <div class="adapt-5-1">
+            <p class="adapt-5-1__text">от 1700 BYN</p>
+         </div>
+
+    </div>
+
+        <!-- Проба -->
+         <div class="fifth-section__card-1 fifth-section__card-back">
+            <h3 class="fifth-section__card-title-10">Сайт для <br>
+онлайн-школы</h3>
+            <p class="fifth-section__card-text_1">от 1700 BYN</p>
+            <!-- Кнопка -->
+<div class="fifth-section__button buttons">
+    <button class="buttons__btn fifth-section__buttons-btn-6 open-modal-btn" id="card-4">ЗАКАЗАТЬ УСЛУГУ</button>
+</div>
+        </div>
+        <!-- Проба -->
+            </div>
+    </div>
+
+
+    <!-- ПЯТАЯ КАРТОЧКА -->
+<div class="fifth-section__card-container">
+            <div class="fifth-section__card-inner">
+                <div class="fifth-section__card-1 fifth-section__card-front">
+                <h3 class="fifth-section__card-title-11">Дизайн сайта</h3>
+        <p class="fifth-section__card-text">Создание прототипа сайта</p>
+        <p class="fifth-section__card-text">Мудборд, подбор референсов</p> 
+        <p class="fifth-section__card-text">Написание продающего текста</p>  
+        <p class="fifth-section__card-text">Подбор видео, изображений</p> 
+        <p class="fifth-section__card-text">Индивидуальный дизайн</p>  
+        <p class="fifth-section__card-text">Дизайн компьютерной и мобильной версия  </p>
+        <p class="fifth-section__card-text">Создание User Interface Kit (компоненты и стили сайта)</p>  
+        
+    <!--  Адаптивная верстка -->
+         <div class="adapt-5-1">
+            <p class="adapt-5-1__text">от 1000 BYN</p>
+         </div>
+
+    </div>
+
+        <!-- Проба -->
+         <div class="fifth-section__card-1 fifth-section__card-back">
+            <h3 class="fifth-section__card-title-12">Дизайн сайта</h3>
+            <p class="fifth-section__card-text_1">от 1000 BYN</p>
+            <!-- Кнопка -->
+<div class="fifth-section__button buttons">
+    <button class="buttons__btn fifth-section__buttons-btn-6 open-modal-btn" id="card-5">ЗАКАЗАТЬ УСЛУГУ</button>
+</div>
+        </div>
+        <!-- Проба -->
+            </div>
+    </div>
+
+
+
+
+<!-- ШЕСТАЯ КАРТОЧКА -->
+    <div class="fifth-section__card-container">
+            <div class="fifth-section__card-inner">
+                <div class="fifth-section__card-1 fifth-section__card-front">
+                <h3 class="fifth-section__card-title-13">Обслуживание 
+сайта</h3>
+        <p class="fifth-section__card-text">Техническая поддержка</p>
+        <p class="fifth-section__card-text">Обновление контента</p> 
+        <p class="fifth-section__card-text">Оптимизация скорости</p>  
+        <p class="fifth-section__card-text">Публикация видео</p> 
+        <p class="fifth-section__card-text">Добавление новых страниц</p>  
+        <p class="fifth-section__card-text">Управление отзывами</p>
+        
+    <!--  Адаптивная верстка -->
+         <div class="adapt-5-1">
+            <p class="adapt-5-1__text">от 70 BYN/месяц</p>
+         </div>
+
+    </div>
+
+        
+         <div class="fifth-section__card-1 fifth-section__card-back">
+            <h3 class="fifth-section__card-title-14">Обслуживание 
+сайта</h3>
+            <p class="fifth-section__card-text_1 fifth-section__card-5">от 70 BYN/месяц</p>
+            <!-- Кнопка -->
+<div class="fifth-section__button buttons">
+    <button class="buttons__btn fifth-section__buttons-btn-6 open-modal-btn" id="card-6">ЗАКАЗАТЬ УСЛУГУ</button>
+</div>
+    
+        </div>
+        
+            </div>
+    </div>
+
+
+    
+
+
+        </div>
+
+
+
+    </section>
+
+    <!-- ШЕСТАЯ СЕКЦИЯ -->
+    <section id="about-me" class="sixth-section">
+        <div class="sixth-section__container container">
+        <h2 class="sixth-section__title">Обо мне</h2>
+
+        <div class="sixth-section__container-1">
+            <div class="sixth-section__text">
+                <p>Меня зовут Диана. Три года назад я начала верстать сайты, и это затянуло. За это время сверстала десятки проектов: от лендингов до сложных многостраничных сайтов. Работаю с HTML, CSS и JavaScript, уделяю внимание семантике, доступности и адаптивности. Если вам нужен сайт, который будет работать быстро и выглядеть круто на любом экране — давайте работать вместе.</p>
+
+            </div>
+
+            <div class="sixth-section__photo">
+                <img src="img/my_photo.jpg" alt="photo">
+            </div>
+        </div>
+
+       <!-- Кнопка -->
+<div class="sixth-section__button buttons">
+    <button class="buttons__btn open-modal-btn">ЗАКАЗАТЬ УСЛУГУ</button>
+</div>
+
+    </div>
+    </section>
+
+
+    <!-- СЕДЬМАЯ СЕКЦИЯ -->
+
+    <section class="seventh-section">
+        <div class="seventh-section__container">
+<div class="form-wrapper container">
+        <div class="form-left">
+            <h1>Обратная связь</h1>
+            
+            <form id="feedbackForm">
+                <input type="hidden" name="from_name" value="Форма обратной связи">
+                <div class="form-group">
+                    <label>Имя Фамилия</label>
+                    <input type="text" name="name" placeholder="Иван" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Ваш почтовый адрес</label>
+                    <input type="email" name="email" placeholder="ivanov@mail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Ваш телефон</label>
+                    <input type="tel" name="phone" placeholder="+375 (29) 000-00-00" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Ваше сообщение</label>
+                    <textarea name="message" placeholder="Введите ваше сообщение..." required></textarea>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">
+                        Используя эту форму, вы соглашаетесь с хранением и обработкой ваших данных на этом сайте.
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">
+    <span class="btn-text">Отправить</span>
+    <span class="btn-loader" style="display:none;">Отправка...</span>
+</button>
+<div id="formStatus" style="margin-top:15px; font-size:14px;"></div>
+            </form>
+        </div>
+
+        <div class="form-right"></div>
+    </div>
+    </div>
+
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+
+    <!-- Футтер -->
+
+    <footer id="contacts" class="footer-section">
+        <div class="footer-container container">
+            <div class="footer__left-wraper">
+            <h3 class="footer__title">Lekkoframe.by</h3>
+            <p class="footer__text">Разработка сайтов</p>
+            <img src="icons/logo.svg" alt="Logo" class="footer__img">
+        </div>
+
+        <div class="footer__network">
+
+            <a href="https://www.instagram.com/lekkoframe.design?igsh=MTN0d3ZxZ2pidzBxaQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <img src="icons/inst.svg" alt="Инстаграм" class="inst">
+    </a>
+
+    <a href="https://vk.ru/id734060340" target="_blank" rel="noopener noreferrer" aria-label="VK">
+      <img src="icons/VK.com-logo.svg" alt="Вконтакте" class="vk">
+    </a>
+
+    <a href="https://t.me/Lekkoframe" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+      <img src="icons/tg.svg" alt="Телеграмм" class="tg">
+    </a>
+
+        </div>
+
+        <div class="footer__right-wraper">
+            <h2 class="footer__right-wraper-title">Контактная информация</h2>
+            <p class="footer__right-wraper-text">Тарасенко Диана Александровна <br> <span class="blue">E-mail:</span> lekkoframe@gmail.com
+<br> <span class="blue">Телефон:</span> +375 29 214-24-83 <br>
+<span class="blue">УНП:</span> АE7494665</p>
+
+        </div>
+        </div>
+
+        <p class="footer__protection">© 2026 Тарасенко Диана Александровна. Все права защищены.</p>
+
+
+    </footer>
+</body>
+</html>
