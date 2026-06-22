@@ -303,3 +303,14 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     });
 });
+
+
+
+
+/* ГАМБУРГЕР */
+
+document.querySelectorAll('.navigation__link').forEach(link => {
+    link.addEventListener('click', () => {
+        document.getElementById('navi-toggle').checked = false;
+    });
+});
