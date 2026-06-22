@@ -38,6 +38,25 @@
     <section class="main-section">
         <div class="main-section__left container">
         <div class="main-section__menu">
+
+            <!-- Меню выезжающее -->
+        <div class="navigation">
+            <input type="checkbox" class="navigation__toggle" id="navi-toggle">        <!-- checkbox - можно выбрать несколько вариантов из списка, хз зачем здесь -->
+            <label for="navi-toggle" class="navigation__buttom"><span class="navigation__icon"></span></label>
+            <div class="navigation__background"></div>
+            <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#development" class="navigation__link">Разработка</a></li>
+                <li class="navigation__item"><a href="#portfolio" class="navigation__link">Примеры работ</a></li>
+                <li class="navigation__item"><a href="#prices" class="navigation__link">Цены</a></li>
+                <li class="navigation__item"><a href="#about-me" class="navigation__link">Обо мне</a></li>
+                <li class="navigation__item"><a href="#contacts" class="navigation__link">Контакты</a></li>
+            </ul>
+            </nav>
+            
+        </div>
+
+        
             <nav class="main-section__nav nav-menu">
                 <ul class="nav-menu__list">
                     <li class="nav-menu__list-item"> <a href="#development">Разработка</a></li>  <!-- ниже в секции 2 создан селектор id about me -->
