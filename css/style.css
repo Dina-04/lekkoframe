@@ -76,7 +76,7 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 83.5rem;
+  height: 100vh;
 }
 .main-section__left {
   display: flex;
@@ -1413,10 +1413,17 @@ body.modal-open {
     font-size: 6px;
   }
   .main-section {
-    height: 103rem;
+    height: 100vh;
+  }
+  .main-section__title_1 {
+    font-size: 3.5rem;
+    margin-bottom: 40rem;
+  }
+  .main-section__title_2 {
+    display: none;
   }
   .main-section__title {
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
   }
   .main-section__title_1 {
     padding-left: 2rem;
@@ -1467,6 +1474,20 @@ body.modal-open {
     order: 2;
     width: 100%;
     flex: none;
+  }
+  .sixth-section__title {
+    margin-bottom: 2rem;
+  }
+  .sixth-section__button {
+    padding-left: 0rem;
+    text-align: center;
+  }
+  .sixth-section__text {
+    margin-bottom: 4rem;
+  }
+  .sixth-section__text p {
+    padding-top: 0rem;
+    font-size: 2rem;
   }
   .buttons__btn {
     padding: 15px 14px;
