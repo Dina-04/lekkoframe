@@ -55,7 +55,7 @@ html
     background-repeat: no-repeat
     background-position: center
     background-size: cover
-    height: 83.5rem
+    height: 100vh
     &__left
         display: flex
         flex-direction: row
@@ -1303,9 +1303,14 @@ body.modal-open
     html 
         font-size: 6px
     .main-section
-        height: 103rem
+        height: 100vh
+        &__title_1
+            font-size: 3.5rem
+            margin-bottom: 40rem
+        &__title_2
+            display: none
     .main-section__title
-        margin-bottom: 6rem
+        margin-bottom: 8rem
     .main-section__title_1
         padding-left: 2rem
     .main-section__title_2
@@ -1348,10 +1353,24 @@ body.modal-open
         width: 100%
         flex: none
 
+    .sixth-section
+        &__title
+            margin-bottom: 2rem
+        &__button
+            padding-left: 0rem
+            text-align: center
+        &__text
+            margin-bottom: 4rem
+            p
+                padding-top: 0rem
+                font-size: 2rem
+
     .buttons__btn 
         padding: 15px 14px
     .submit-btn 
         padding: 12px 32px
+
+    
 
     .inst
         margin-right: .8px
